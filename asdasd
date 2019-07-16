@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Opinion Outpost Mockup</title>
+	<link href="./OOmockup.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="./nivo-slider/nivo-slider.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="./nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="tabbedPanels">
+			<ul class="tabs">
+				<li><a href="#login">Login</a></li>
+				<li><a href="#joinNow">Join Now</a></li>
+			</ul>
+			<div class="panelContainer">
+				<div class="panel" id="joinNow">
+					<label id="gender">Gender</label> <span class="imgGenders"><img class="gender" id="male" src="./images/OpinionOutpost/male.jpg" /> <img class="gender" id="female" src="./images/OpinionOutpost/female.jpg" /></span> <br>
+					<label>First Name</label> <input type="text"></input><br>
+					<label>Last Name</label> <input type="text"></input><br>
+					<label>E-mail</label> <input type="text" id="email"></input><br>
+					<button>Join Now</button> <br>
+					<p id="register">By registering, you agree that you accept our <a href="" class="details">Privacy<br>
+						Policy</a>, <a href="" class="details">Terms &amp; Conditions</a>, and <a href="" class="details">Prize Draw Rules</a></p>
+				</div>
+				<div class="panel" id="login">
+					<label>Login</label> <input id="login" type="text"></input> <br>
+					<label>Password</label> <input type="text"></input> <br>
+					<button>Sign-in</button>
+				</div>
+			</div>
+		</div>
+		<div id="logo">
+			<img src="./images/OOlogo.jpg" />
+		</div>
+		<div>
+			<ol>
+				<li class="sliderPos">Register for Free</li>
+				<li class="sliderPos">Take Surveys</li>
+				<li class="sliderPos">Earn Cash and Rewards</li>
+			</ol>
+		</div>
+
+		<div id="slider" class="nivoSlider">
+		    <img class="imgHeight" id="testimonials" src="./images/OpinionOutpost/testimonials.jpg" alt="" />
+		    
+		</div>
+		
+		<div id="footer">
+			<div id="rewards">
+				<img class="rewards" src="./images/OpinionOutpost/amazonLogo-1.jpg" />
+				<img class="rewards" src="./images/OpinionOutpost/payPalLogo-1.jpg" />
+				<img class="rewards" src="./images/OpinionOutpost/iTunesLogo-1.jpg" />
+				<img class="rewards" src="./images/OpinionOutpost/alawarGames-1.jpg" />
+				<img class="rewards" src="./images/OpinionOutpost/restaurantLogo.jpg" />
+			</div>
+			<div id="contactUs">
+				<p>You received this e-mail as a member of Opinion Outpost. 
+					Please do not click 'Reply' to this e-mail.  For help, contact us.<br>
+					Privacy Policy | Terms &amp; Conditions | Unsubscribe <br>
+					Opinion Outpost is owned and maintained by Survey Sampling International.
+			</div>
+		</div>
+		
+	</div>
+	<script src="./OOmockup.js" type="text/javascript"></script>
+	<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    
+</body>
+
+</html>
